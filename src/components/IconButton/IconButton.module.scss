@@ -1,0 +1,123 @@
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: normal;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  gap: 5px;
+
+  &--with-left-icon {
+    gap: 10px;
+  }
+
+  // ── Variants ──────────────────────────────────────────────────────────
+
+  &--gradient {
+    background: linear-gradient(90deg, #4501e8, #7d00fc);
+    color: #ffffff;
+    border: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: linear-gradient(90deg, #7d00fc, #4501e8);
+    }
+  }
+
+  &--secondary {
+    background-color: #101828;
+    color: #ffffff;
+    border: 1px solid transparent;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #ffffff;
+      color: #101828;
+      border-color: #101828;
+    }
+  }
+
+  &--white {
+    background-color: #ffffff;
+    color: #101828;
+    border: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #101828;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+    }
+  }
+
+  &--outline-grey {
+    background-color: transparent;
+    color: #a6a6a6;
+    border: 1px solid #a6a6a6;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #a6a6a6;
+      color: #ffffff;
+      border-color: #a6a6a6;
+    }
+  }
+
+  &--outline-info {
+    background-color: transparent;
+    color: #4501e8;
+    border: 1px solid #4501e8;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #4501e8;
+      color: #ffffff;
+      border-color: #4501e8;
+    }
+  }
+
+  &--outline-white {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #ffffff;
+      color: #101828;
+      border-color: #ffffff;
+    }
+  }
+
+  // ── Icon ──────────────────────────────────────────────────────────────
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__label {
+    flex-shrink: 0;
+  }
+}
