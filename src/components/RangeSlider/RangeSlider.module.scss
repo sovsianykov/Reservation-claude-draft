@@ -1,0 +1,61 @@
+.range-slider {
+  position: relative;
+  width: 345px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+
+  &__track {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  &__track-fill {
+    position: absolute;
+    height: 100%;
+    background: #4501e8;
+    border-radius: 2px;
+    pointer-events: none;
+  }
+
+  &__thumb {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    transform: translateX(-50%);
+    background: #4501e8;
+    //border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    z-index: 1;
+
+    &:active {
+      cursor: grabbing;
+    }
+
+    &:focus-visible {
+      outline: 2px solid rgba(255, 255, 255, 0.6);
+      outline-offset: 2px;
+    }
+  }
+
+  &__thumb-label {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    white-space: nowrap;
+    pointer-events: none;
+    line-height: 1;
+    user-select: none;
+  }
+}

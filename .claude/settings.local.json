@@ -16,7 +16,8 @@
       "mcp__claude_ai_Figma__get_screenshot",
       "WebFetch(domain:www.figma.com)",
       "Bash(node:*)",
-      "mcp__playwright__browser_wait_for"
+      "mcp__playwright__browser_wait_for",
+      "mcp__playwright__browser_run_code"
     ]
   }
 }

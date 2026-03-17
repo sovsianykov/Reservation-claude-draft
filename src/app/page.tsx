@@ -34,6 +34,12 @@ const pages = [
     description: "Travel Badges components imported from Figma designs",
     tag: "UI",
   },
+  {
+    href: "/range-slider",
+    title: "Range Slider",
+    description: "Draggable range slider component imported from Figma designs",
+    tag: "UI",
+  },
 ];
 
 export default function Home() {
