@@ -1,3 +1,4 @@
+"use client"
 import IconButton, {
   IconButtonVariant,
   IconButtonIconPosition,
@@ -50,11 +51,10 @@ export default function FigmaPreviewPage() {
             </span>
             {variants.map((v) => (
               <IconButton
-                key={v}
-                label="Button"
-                variant={v}
-                iconPosition={pos}
-              />
+                  key={v}
+                  label="Button"
+                  variant={v}
+                  iconPosition={pos} />
             ))}
           </div>
         ))}

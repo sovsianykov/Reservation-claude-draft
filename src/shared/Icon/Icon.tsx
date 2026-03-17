@@ -1,8 +1,11 @@
-import Image from "next/image";
 import {FC, useId} from "react";
 
-import ArrowRight from "../../../public/icons/arrow-right.svg";
-import Search from "../../../public/icons/search.svg";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import ArrowRight from "../../../public/icons/arrow-right.svg?react";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import Search from "../../../public/icons/search.svg?react";
 
 export const iconMap = {
     arrowRight: ArrowRight,
@@ -43,22 +46,6 @@ export const Icon: FC<IconProps> = ({
         return null;
     }
 
-    if (typeof IconComponent === 'object') {
-        // It's an image import
-        return (
-            <Image
-                priority={priority}
-                src={IconComponent}
-                width={width}
-                height={height}
-                alt={alt ?? `${type} icon`}
-                {...other}
-                data-testid={`icon-${type}`}
-            />
-        );
-    }
-
-    // It's an SVG import
     return (
         <IconComponent
             width={width}

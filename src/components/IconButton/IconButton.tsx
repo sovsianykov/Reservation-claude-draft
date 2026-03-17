@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {MouseEventHandler} from 'react';
 import clsx from 'clsx';
 import Icon from '@/shared/Icon/Icon';
 import styles from './IconButton.module.scss';
@@ -21,6 +21,10 @@ export interface IconButtonProps
   iconPosition?: IconButtonIconPosition;
   /** Custom icon element; defaults to built-in SearchIcon (left) or ArrowRightIcon (right) */
   icon?: React.ReactNode;
+
+  type?: 'button' | 'submit' | 'reset';
+
+  onClick?: (event: React.MouseEvent<HTMLElement>) => void;
 }
 
 
@@ -31,12 +35,18 @@ export default function IconButton({
   variant = 'gradient',
   iconPosition = 'right',
   icon,
+  type = 'button',
   className,
+  onClick,
   ...rest
 }: IconButtonProps) {
+
+  const onClickHandler: MouseEventHandler<HTMLButtonElement> = (e) => {
+    onClick?.(e);
+  };
   const defaultIcon =
     iconPosition === 'left'
-      ? <Icon type="search" width={20} height={20} role="presentation" />
+      ? <Icon type="search" width={20} height={20} role="presentation"  />
       : <Icon type="arrowRight" width={20} height={20} role="presentation" />;
   const resolvedIcon = icon ?? defaultIcon;
   const hasIcon = iconPosition !== 'none';
@@ -49,7 +59,7 @@ export default function IconButton({
   );
 
   return (
-    <button type="button" className={classNames} {...rest}>
+    <button type={type} className={classNames} {...rest} onClick={onClickHandler}>
       {hasIcon && iconPosition === 'left' && (
         <span className={styles['icon-button__icon']} aria-hidden="true">
           {resolvedIcon}

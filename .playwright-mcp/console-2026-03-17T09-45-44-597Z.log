@@ -1,0 +1,4 @@
+[     368ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:6006/favicon.ico:0
+[   42907ms] [ERROR] WebSocket connection to 'ws://localhost:6006/storybook-server-channel?token=d61f4410-7a15-4515-a816-219ffc1e3aab' failed:  @ http://localhost:6006/node_modules/.cache/storybook/10.2.19/1c3385a5d25e538d10b518b310c74d3ca2690b6aaffeadccd74da79736171f86/sb-vite/deps/storybook_internal_preview_runtime.js?v=74ef45e1:16819
+[   42907ms] [ERROR] WebSocket connection to 'ws://localhost:6006/?token=43E62Hi7UWKK' failed:  @ http://localhost:6006/@vite/client:840
+[  426825ms] [WARNING] Accessing the Story Store is deprecated and will be removed in 9.0 @ http://localhost:6006/node_modules/.cache/storybook/10.2.19/1c3385a5d25e538d10b518b310c74d3ca2690b6aaffeadccd74da79736171f86/sb-vite/deps/storybook_internal_preview_runtime.js?v=74ef45e1:15703
