@@ -17,7 +17,7 @@ const pages = [
     tag: "UI",
   },
   {
-    href: "/small-badge",
+    href: "/small-badges",
     title: "Small Badge Previews",
     description: "Small Badges components imported from Figma designs",
     tag: "UI",
@@ -26,6 +26,12 @@ const pages = [
     href: "/premium-badge",
     title: "Premium Badge Previews",
     description: "Premium Badges components imported from Figma designs",
+    tag: "UI",
+  },
+  {
+    href: "/travel-badge",
+    title: "Travel Badge Previews",
+    description: "Travel Badges components imported from Figma designs",
     tag: "UI",
   },
 ];

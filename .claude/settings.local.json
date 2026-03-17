@@ -15,7 +15,8 @@
       "Bash(npx playwright:*)",
       "mcp__claude_ai_Figma__get_screenshot",
       "WebFetch(domain:www.figma.com)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "mcp__playwright__browser_wait_for"
     ]
   }
 }
