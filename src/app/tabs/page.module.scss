@@ -1,0 +1,23 @@
+.page {
+    padding: 40px;
+
+    &__title {
+        font-family: 'Manrope', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+
+    &__tabs {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    &__active {
+        margin-top: 24px;
+        font-family: 'Manrope', sans-serif;
+        font-size: 14px;
+        color: #797979;
+    }
+}

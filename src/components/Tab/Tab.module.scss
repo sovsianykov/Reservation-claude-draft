@@ -1,0 +1,31 @@
+.tab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 88px;
+    width: 120px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #f1f5f9;
+
+    &--active {
+        background-color: #f0e2ff;
+    }
+
+    &__label {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: normal;
+        text-align: center;
+        color: #797979;
+        letter-spacing:  0.01rem;
+
+        .tab--active & {
+            color: #4501e8;
+            font-weight: 600;
+        }
+    }
+}

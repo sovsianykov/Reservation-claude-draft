@@ -1,0 +1,110 @@
+$purple: #4501e8;
+$track-bg: rgba(255, 255, 255, 0.8);
+$track-height: 11px;
+$thumb-size: 26px;
+$thumb-half: calc($thumb-size / 2);
+
+.rrs {
+  width: 100%;
+
+  &__track-row {
+    position: relative;
+    // tall enough for: tooltip (~28px) + arrow (6px) + gap (6px) + thumb (26px)
+    height: calc($thumb-size + 40px);
+    display: flex;
+    align-items: center;
+  }
+
+  &__track {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: $track-height;
+    background: $track-bg;
+    border-radius: 100px;
+    cursor: pointer;
+  }
+
+  &__track-fill {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: $purple;
+    border-radius: 100px;
+    pointer-events: none;
+  }
+
+  &__thumb {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: $thumb-size;
+    height: $thumb-size;
+    cursor: grab;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+
+    &:active {
+      cursor: grabbing;
+    }
+
+    &:focus-visible {
+      outline: 2px solid rgba(255, 255, 255, 0.7);
+      outline-offset: 3px;
+      border-radius: 50%;
+    }
+  }
+
+  &__thumb-icon {
+    display: block;
+    pointer-events: none;
+    flex-shrink: 0;
+  }
+
+  &__tooltip {
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    pointer-events: none;
+    user-select: none;
+    white-space: nowrap;
+  }
+
+  &__tooltip-text {
+    background: $purple;
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 5px 14px;
+    border-radius: 6px;
+    display: block;
+  }
+
+  &__tooltip-arrow {
+    display: block;
+    margin-top: -1px;
+  }
+
+  &__labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+  }
+
+  &__label {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1;
+  }
+}

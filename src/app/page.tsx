@@ -1,7 +1,6 @@
 "use client"
 import Link from "next/link";
 import styles from "./page.module.css";
-import IconButton from "@/components/IconButton/IconButton";
 
 const pages = [
   {
@@ -38,6 +37,24 @@ const pages = [
     href: "/range-slider",
     title: "Range Slider",
     description: "Draggable range slider component imported from Figma designs",
+    tag: "UI",
+  },
+  {
+    href: "/responsive-slider",
+    title: "Responsive Range Slider",
+    description: "Responsive dual-handle range slider with tooltips from Figma designs",
+    tag: "UI",
+  },
+  {
+    href: "/membership-plan-slider",
+    title: "Membership Plan Slider",
+    description: "Premium membership bar with progress and CTA button from Figma designs",
+    tag: "UI",
+  },
+  {
+    href: "/tabs",
+    title: "Tabs",
+    description: "Tab component with active state from Figma designs",
     tag: "UI",
   },
 ];

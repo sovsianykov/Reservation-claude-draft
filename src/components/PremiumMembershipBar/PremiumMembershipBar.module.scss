@@ -1,0 +1,88 @@
+.membership-bar {
+  display: inline-flex;
+  align-items: center;
+  min-width: 320px;
+  width: 100%;
+  max-width: 800px;
+  height: 46px;
+  padding: 5px 10px;
+  border: 1px solid #e9e9e9;
+  border-radius: 100px;
+  box-sizing: border-box;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 80px;
+    flex-shrink: 0;
+  }
+
+  &__check-icon {
+    color: #f0b100;
+    flex-shrink: 0;
+  }
+
+  &__label-text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #202020;
+    white-space: nowrap;
+  }
+
+  &__track {
+    flex: 1;
+    height: 6px;
+    background: #e9e9e9;
+    border-radius: 20px;
+    overflow: hidden;
+    min-width: 0;
+  }
+
+  &__fill {
+    height: 100%;
+    background: linear-gradient(to right, #7d00fc, #4300e7);
+    border-radius: 20px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 36px;
+    max-width: 168px;
+    padding: 0 30px;
+    letter-spacing: 0.05px;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(to right, #4501e8, #7d00fc);
+    cursor: pointer;
+    flex-shrink: 0;
+    white-space: nowrap;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  &__button-text {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ffffff;
+  }
+
+  &__gift-icon {
+    color: #ffffff;
+    flex-shrink: 0;
+  }
+}
