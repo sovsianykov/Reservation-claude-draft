@@ -22,6 +22,12 @@ const pages = [
     description: "Small Badges components imported from Figma designs",
     tag: "UI",
   },
+  {
+    href: "/premium-badge",
+    title: "Premium Badge Previews",
+    description: "Premium Badges components imported from Figma designs",
+    tag: "UI",
+  },
 ];
 
 export default function Home() {

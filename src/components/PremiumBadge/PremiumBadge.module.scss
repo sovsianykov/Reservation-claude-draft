@@ -1,0 +1,72 @@
+.premium-badge {
+    display: inline-flex;
+    background-color: #e4f5e9;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 49px;
+    width: 467px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 100%;
+    }
+
+    &__status-container {
+        position: relative;
+        flex-shrink: 0;
+        width: 140px;
+        height: 49px;
+    }
+
+    // Green diagonal section — 140×49px, diagonal right edge via clip-path
+    &__status-bg {
+        position: absolute;
+        inset: 0;
+        width: 140px;
+        height: 49px;
+        background-color: #00a63e;
+        border-radius: 8px 0 0 8px;
+        clip-path: polygon(0 0, 120px 0, 140px 100%, 0 100%);
+    }
+
+    &__status {
+        position: absolute;
+        top: 14px;
+        left: 17px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    &__icon {
+        color: #ffffff;
+        flex-shrink: 0;
+    }
+
+    &__claimed {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: normal;
+        color: #ffffff;
+        white-space: nowrap;
+    }
+
+    &__renews {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.7px;
+        line-height: normal;
+        color: #202020;
+        white-space: nowrap;
+        margin: 0;
+        padding-right: 20px;
+
+        strong {
+            font-weight: 700;
+        }
+    }
+}
