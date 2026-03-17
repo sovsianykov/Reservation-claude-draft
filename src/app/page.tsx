@@ -10,12 +10,17 @@ const pages = [
     description: "Button components imported from Figma designs",
     tag: "UI",
   },
+  {
+    href: "/badge",
+    title: "Badge Previews",
+    description: "Badges components imported from Figma designs",
+    tag: "UI",
+  },
 ];
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <IconButton label="Button" iconPosition="none"/>
       <main className={styles.main}>
         <div className={styles.intro}>
           <h1>Components Library</h1>
