@@ -1,0 +1,41 @@
+.checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 17px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  &__box {
+    position: absolute;
+    inset: 0;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    transition: border-color 0.15s ease;
+  }
+
+  &__check {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  &--checked {
+    .checkbox__box {
+      border-color: #7d00fc;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid #7d00fc;
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+}

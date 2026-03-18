@@ -63,6 +63,30 @@ const pages = [
     description: 'Toggle button switching between plus and minus icons from Figma designs',
     tag: 'UI',
   },
+  {
+    href: '/checkbox',
+    title: 'Checkbox',
+    description: 'Checkbox input with checked and unchecked states from Figma designs',
+    tag: 'UI',
+  },
+  {
+    href: '/radio-button',
+    title: 'Radio Button',
+    description: 'Radio button input with selected and unselected states from Figma designs',
+    tag: 'UI',
+  },
+  {
+    href: '/text-input',
+    title: 'Text Input',
+    description: 'Text input with default and focused states from Figma designs',
+    tag: 'UI',
+  },
+  {
+    href: '/days-counter',
+    title: 'Days Counter',
+    description: 'Circular arc progress indicator showing trip duration from Figma designs',
+    tag: 'UI',
+  },
 ];
 
 export default function Home() {

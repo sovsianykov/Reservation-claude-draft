@@ -1,0 +1,22 @@
+.days-counter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &__track {
+    fill: none;
+    stroke: rgba(255, 255, 255, 0.2);
+  }
+
+  &__arc {
+    fill: none;
+    stroke: #4040e8;
+  }
+
+  &__label {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    fill: #ffffff;
+  }
+}
