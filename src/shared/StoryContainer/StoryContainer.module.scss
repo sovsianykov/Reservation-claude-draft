@@ -1,0 +1,44 @@
+.container {
+    position: relative;
+    max-width: 800px;
+    min-height: 200px;
+    padding: 40px 24px 24px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    &.light {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    &.dark {
+        background-color: #1a1a1a;
+        color: #ffffff;
+    }
+}
+
+.toggle {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid currentColor;
+    background: transparent;
+    color: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.15s ease;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+}

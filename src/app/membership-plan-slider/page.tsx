@@ -1,20 +1,12 @@
 'use client';
 
 import PremiumMembershipBar from '@/components/PremiumMembershipBar/PremiumMembershipBar';
+import styles from './page.module.scss';
 
 export default function FigmaPreviewPage() {
   return (
-    <div
-      style={{
-        background: '#0d1117',
-        minHeight: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '60px 40px',
-      }}
-    >
-      <div style={{ width: '100%', maxWidth: '800px' }}>
+    <div className={styles.page}>
+      <div className={styles.inner}>
         <PremiumMembershipBar
           label="1 Month"
           buttonText="Anniversary Gift"

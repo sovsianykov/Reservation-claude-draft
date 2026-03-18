@@ -1,0 +1,64 @@
+[    1178ms] Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="figma-prev..." loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/figma-pre..." tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+              <SegmentViewNode type="page" pagePath="figma-prev...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function FigmaPreviewPage} serverProvidedParams={{...}}>
+                  <FigmaPreviewPage params={Promise} searchParams={Promise}>
+                    <div style={{display:"flex", ...}}>
+                      <ToggleButton active={true} aria-label="Toggle active">
+                        <button type="button" className="ToggleButt..." onClick={undefined} aria-pressed={true} ...>
+                          <Icon type="minus" width={15} height={2} role="presentation" className="ToggleButt...">
+                            <minus width={15} height={2} data-testid="icon" className="ToggleButt..." role="presentation" ...>
++                             <svg
++                               xmlns="http://www.w3.org/2000/svg"
++                               viewBox="0 0 14 2"
++                               fill="none"
++                               width={15}
++                               height={2}
++                               data-testid="icon"
++                               className="ToggleButton-module-scss-module__EVlFJq__toggle-button__icon"
++                               role="presentation"
++                               aria-label={undefined}
++                               id="icon-_R_pbn5rlb_"
++                             >
+                      ...
+              ...
+            ...
+
+    at throwOnHydrationMismatch (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:3348:56)
+    at beginWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:6775:918)
+    at runWithFiberInDEV (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:965:74)
+    at performUnitOfWork (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:9562:97)
+    at workLoopConcurrentByScheduler (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:9558:58)
+    at renderRootConcurrent (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:9541:71)
+    at performWorkOnRoot (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:9068:150)
+    at performWorkOnRootViaSchedulerTask (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js:10230:9)
+    at MessagePort.performWorkUntilDeadline (http://localhost:3000/_next/static/chunks/node_modules_next_dist_compiled_a0e4c7b4._.js:2647:64)
+[   70300ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=Bik3wTwFkdLwPsi6ncC2Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_17643121._.js:10878
+[   71306ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=Bik3wTwFkdLwPsi6ncC2Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_17643121._.js:10878
+[   72308ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=Bik3wTwFkdLwPsi6ncC2Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_17643121._.js:10878
+[   73310ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=Bik3wTwFkdLwPsi6ncC2Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_17643121._.js:10878
+[   74312ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=Bik3wTwFkdLwPsi6ncC2Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_17643121._.js:10878
+[   79315ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=Bik3wTwFkdLwPsi6ncC2Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_17643121._.js:10878
+[   84318ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=Bik3wTwFkdLwPsi6ncC2Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_17643121._.js:10878
+[   89322ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=Bik3wTwFkdLwPsi6ncC2Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_17643121._.js:10878
+[   94326ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=Bik3wTwFkdLwPsi6ncC2Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_17643121._.js:10878
+[   99330ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=Bik3wTwFkdLwPsi6ncC2Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_17643121._.js:10878
+[  104333ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=Bik3wTwFkdLwPsi6ncC2Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_17643121._.js:10878
+[  109339ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=Bik3wTwFkdLwPsi6ncC2Q' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/node_modules_next_dist_client_17643121._.js:10878

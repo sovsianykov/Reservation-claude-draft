@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import { Badge } from '@/shared/Badge/Badge';
+import styles from './page.module.scss';
 
 export default function FigmaPreviewPage() {
     return (
-        <main style={{ padding: '2rem', display: 'flex', flexDirection: 'row', gap: '1rem', alignItems: 'center', background: '#1a1a2e', minHeight: '100vh' }}>
+        <main className={styles.page}>
             <Badge
                 label="Add text here"
                 variant="success"

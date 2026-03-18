@@ -1,19 +1,23 @@
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import PremiumMembershipBar from './PremiumMembershipBar';
+import StoryContainer from '../../shared/StoryContainer/StoryContainer';
 
 const meta: Meta<typeof PremiumMembershipBar> = {
   title: 'Components/PremiumMembershipBar',
   component: PremiumMembershipBar,
   parameters: {
     layout: 'centered',
-    backgrounds: {
-      default: 'black',
-      values: [{ name: 'black', value: '#000000' }],
-    },
   },
   argTypes: {
     progress: { control: { type: 'range', min: 0, max: 100 } },
   },
+  decorators: [
+    (Story) => (
+      <StoryContainer defaultTheme="dark">
+        <Story />
+      </StoryContainer>
+    ),
+  ],
 };
 
 export default meta;

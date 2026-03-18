@@ -1,0 +1,13 @@
+.page {
+  background: #0d1117;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+}
+
+.inner {
+  width: 100%;
+  max-width: 800px;
+}
