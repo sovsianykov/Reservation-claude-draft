@@ -1,9 +1,11 @@
-import MainMenu from '@/components/MainMenu/MainMenu';
+import HomeMembershipCard from '@/containers/HomeMembershipCard/HomeMembershipCard';
 
 export default function FigmaPreviewPage() {
   return (
-    <main style={{ background: '#fff', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px' }}>
-      <MainMenu defaultActiveId="flights" />
+    <main style={{ padding: '40px', background: '#ffffff', minHeight: '100vh', display: 'flex', gap: '24px', flexWrap: 'wrap', justifyContent: 'center' }}>
+      <HomeMembershipCard membershipCardType="classic" />
+      <HomeMembershipCard membershipCardType="plus" />
+      <HomeMembershipCard membershipCardType="premium" />
     </main>
   );
 }

@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { fn } from 'storybook/test';
 import IconButton from './IconButton';
+import Icon from '@/shared/Icon/Icon';
 
 const meta = {
   title: 'Components/IconButton',
@@ -83,6 +84,18 @@ export const OutlineWhite: Story = {
     variant: 'outline-white',
     iconPosition: 'right',
     label: 'Search',
+  },
+};
+
+export const ViewOnMap: Story = {
+  parameters: {
+    backgrounds: { default: 'dark' },
+  },
+  args: {
+    variant: 'outline-white',
+    iconPosition: 'right',
+    label: 'View On Map',
+    icon: <Icon type="poiMap" width={18} height={17} role="presentation" />,
   },
 };
 

@@ -18,6 +18,17 @@ import Tickets from '../../../public/icons/tickets.svg';
 import Member from '../../../public/icons/member.svg';
 import Savings from '../../../public/icons/savings.svg';
 import Car from '../../../public/icons/car.svg';
+import PoiMap from '../../../public/icons/poi-map.svg';
+import AddressBook from '../../../public/icons/address-book.svg';
+import CreditCardMultiple from '../../../public/icons/credit-card-multiple.svg';
+import LocationPin from '../../../public/icons/location-pin.svg';
+import Calendar from '../../../public/icons/calendar.svg';
+import ArrowRightThin from '../../../public/icons/arrow-right-thin.svg';
+import Guests from '../../../public/icons/guests.svg';
+import ClassicMembership from '../../../public/icons/classic-membership.svg';
+import CheckCircle from '../../../public/icons/check-circle.svg';
+import PlusMembership from '../../../public/icons/plus-membership.svg';
+import PremiumMembership from '../../../public/icons/premium-membership.svg';
 
 export const iconMap = {
   arrowRight: ArrowRight,
@@ -39,6 +50,17 @@ export const iconMap = {
   member: Member,
   savings: Savings,
   car: Car,
+  poiMap: PoiMap,
+  addressBook: AddressBook,
+  creditCardMultiple: CreditCardMultiple,
+  locationPin: LocationPin,
+  calendar: Calendar,
+  arrowRightThin: ArrowRightThin,
+  guests: Guests,
+  classicMembership: ClassicMembership,
+  checkCircle: CheckCircle,
+  plusMembership: PlusMembership,
+  premiumMembership: PremiumMembership,
 };
 
 export type IconType = keyof typeof iconMap;

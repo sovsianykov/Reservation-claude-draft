@@ -93,6 +93,36 @@ const pages = [
     description: 'Navigation menu with icon + label items and active/hover states from Figma designs',
     tag: 'UI',
   },
+  {
+    href: '/select',
+    title: 'Select',
+    description: 'Dropdown select with placeholder, pre-selected value, and custom options from Figma designs',
+    tag: 'UI',
+  },
+  {
+    href: '/icon-button',
+    title: 'Icon Button',
+    description: 'Button with icon support — all variants including outline-white "View On Map" from Figma designs',
+    tag: 'UI',
+  },
+  {
+    href: '/icon-tab',
+    title: 'Icon Tab',
+    description: 'Tab with icon and label — default and active states from Figma designs',
+    tag: 'UI',
+  },
+  {
+    href: '/home-search',
+    title: 'Home Search',
+    description: 'Hero search container with header and hotel search form from Figma designs',
+    tag: 'UI',
+  },
+  {
+    href: '/home-membership-card',
+    title: 'Home Membership Card',
+    description: 'Membership tier cards — Classic, Plus, and Premium — from Figma designs',
+    tag: 'UI',
+  },
 ];
 
 export default function Home() {

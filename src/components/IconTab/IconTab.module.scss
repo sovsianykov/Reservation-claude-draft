@@ -1,0 +1,43 @@
+.icon-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 186px;
+  height: 49px;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #f1f5f9;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  &--active {
+    background-color: #7d00fc;
+
+    .icon-tab__label {
+      color: #ffffff;
+    }
+
+    .icon-tab__icon {
+      color: #ffffff;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #202020;
+  }
+
+  &__label {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: normal;
+    white-space: nowrap;
+    color: #202020;
+  }
+}
