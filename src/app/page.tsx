@@ -87,6 +87,12 @@ const pages = [
     description: 'Circular arc progress indicator showing trip duration from Figma designs',
     tag: 'UI',
   },
+  {
+    href: '/main-menu',
+    title: 'Main Menu',
+    description: 'Navigation menu with icon + label items and active/hover states from Figma designs',
+    tag: 'UI',
+  },
 ];
 
 export default function Home() {

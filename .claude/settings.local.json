@@ -20,7 +20,8 @@
       "mcp__playwright__browser_run_code",
       "Bash(pkill:*)",
       "mcp__claude_ai_Figma__get_metadata",
-      "Bash(xargs ls:*)"
+      "Bash(xargs ls:*)",
+      "Bash(sort:*)"
     ]
   }
 }

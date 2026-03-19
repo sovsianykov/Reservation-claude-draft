@@ -1,0 +1,40 @@
+.page {
+  padding: 40px;
+  background: #0a0a0a;
+
+  &__title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    color: #797979;
+    margin-bottom: 40px;
+  }
+
+  &__section {
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #797979;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  &__demo {
+    background: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    padding: 24px 32px;
+    display: inline-flex;
+  }
+}

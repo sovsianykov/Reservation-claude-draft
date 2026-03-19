@@ -1,0 +1,38 @@
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #202020;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  white-space: nowrap;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: #7d00fc;
+  }
+
+  &--active {
+    color: #4501e8;
+
+    &:hover {
+      color: #4501e8;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &__label {
+    flex-shrink: 0;
+  }
+}

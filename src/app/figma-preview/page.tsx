@@ -1,10 +1,9 @@
-import DaysCounter from '@/components/DaysCounter/DaysCounter';
+import MainMenu from '@/components/MainMenu/MainMenu';
 
 export default function FigmaPreviewPage() {
   return (
-    <main style={{ background: '#0d0d1a', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '24px' }}>
-      <DaysCounter days={12} maxDays={30} />
-      <DaysCounter days={4} maxDays={30} />
+    <main style={{ background: '#fff', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '40px' }}>
+      <MainMenu defaultActiveId="flights" />
     </main>
   );
 }

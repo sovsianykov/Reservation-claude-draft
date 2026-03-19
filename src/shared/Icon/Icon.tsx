@@ -6,11 +6,18 @@ import Wallet from '../../../public/icons/wallet.svg';
 import Perk from '../../../public/icons/perk.svg';
 import Pointer from '../../../public/icons/pointer.svg';
 import Flight from '../../../public/icons/flight.svg';
+import Fly from '../../../public/icons/fly.svg';
 import CheckFill from '../../../public/icons/check-fill.svg';
 import GiftOpen from '../../../public/icons/gift-open.svg';
 import Plus from '../../../public/icons/plus.svg';
 import Minus from '../../../public/icons/minus.svg';
 import Verified from '../../../public/icons/verified.svg';
+import Hotel from '../../../public/icons/hotel.svg';
+import Ticket from '../../../public/icons/ticket.svg';
+import Tickets from '../../../public/icons/tickets.svg';
+import Member from '../../../public/icons/member.svg';
+import Savings from '../../../public/icons/savings.svg';
+import Car from '../../../public/icons/car.svg';
 
 export const iconMap = {
   arrowRight: ArrowRight,
@@ -20,11 +27,18 @@ export const iconMap = {
   perk: Perk,
   pointer: Pointer,
   flight: Flight,
+  fly: Fly,
   checkFill: CheckFill,
   giftOpen: GiftOpen,
   plus: Plus,
   minus: Minus,
   verified: Verified,
+  hotel: Hotel,
+  ticket: Ticket,
+  tickets: Tickets,
+  member: Member,
+  savings: Savings,
+  car: Car,
 };
 
 export type IconType = keyof typeof iconMap;
