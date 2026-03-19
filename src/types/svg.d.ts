@@ -1,5 +1,10 @@
+// src/types/svg.d.ts
 declare module '*.svg' {
-  import type { FC, SVGProps } from 'react';
-  const ReactComponent: FC<SVGProps<SVGSVGElement>>;
+  import * as React from 'react';
+
+  const ReactComponent: React.FunctionComponent<
+    React.SVGProps<SVGSVGElement> & { title?: string }
+  >;
+
   export default ReactComponent;
 }
