@@ -100,12 +100,6 @@ const pages = [
     tag: 'UI',
   },
   {
-    href: '/icon-button',
-    title: 'Icon Button',
-    description: 'Button with icon support — all variants including outline-white "View On Map" from Figma designs',
-    tag: 'UI',
-  },
-  {
     href: '/icon-tab',
     title: 'Icon Tab',
     description: 'Tab with icon and label — default and active states from Figma designs',
