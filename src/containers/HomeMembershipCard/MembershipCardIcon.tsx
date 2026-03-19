@@ -1,22 +1,22 @@
 import { FC } from 'react';
-import { Icon, IconType } from '@/shared/Icon/Icon';
+import Image from 'next/image';
 import styles from './HomeMembershipCard.module.scss';
 
 export type MembershipCardType = 'classic' | 'plus' | 'premium';
 
-const ICON_CONFIG: Record<MembershipCardType, { iconType: IconType; gradientFrom: string; gradientTo: string }> = {
+const ICON_CONFIG: Record<MembershipCardType, { src: string; gradientFrom: string; gradientTo: string }> = {
   classic: {
-    iconType: 'classicMembership',
+    src: '/icons/classic-membership.svg',
     gradientFrom: '#f0b100',
     gradientTo: '#f5e7d3',
   },
   plus: {
-    iconType: 'plusMembership',
+    src: '/icons/plus-membership.svg',
     gradientFrom: '#fb2c36',
     gradientTo: '#f0b100',
   },
   premium: {
-    iconType: 'premiumMembership',
+    src: '/icons/premium-membership.svg',
     gradientFrom: '#4501e8',
     gradientTo: '#7d00fc',
   },
@@ -27,19 +27,19 @@ export interface MembershipCardIconProps {
 }
 
 const MembershipCardIcon: FC<MembershipCardIconProps> = ({ membershipCardType }) => {
-  const { iconType, gradientFrom, gradientTo } = ICON_CONFIG[membershipCardType];
+  const { src, gradientFrom, gradientTo } = ICON_CONFIG[membershipCardType];
 
   return (
     <div
       className={styles['membership-card__icon-container']}
       style={{ background: `linear-gradient(135deg, ${gradientFrom} 0%, ${gradientTo} 100%)` }}
     >
-      <Icon
-        type={iconType}
+      <Image
+        src={src}
+        alt={`${membershipCardType} membership`}
         width={36}
         height={36}
         className={styles['membership-card__icon']}
-        ariaLabel={`${membershipCardType} membership`}
       />
     </div>
   );

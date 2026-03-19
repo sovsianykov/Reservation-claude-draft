@@ -112,12 +112,6 @@ const pages = [
     tag: 'UI',
   },
   {
-    href: '/home-search',
-    title: 'Home Search',
-    description: 'Hero search container with header and hotel search form from Figma designs',
-    tag: 'UI',
-  },
-  {
     href: '/home-membership-card',
     title: 'Home Membership Card',
     description: 'Membership tier cards — Classic, Plus, and Premium — from Figma designs',
