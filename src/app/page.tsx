@@ -111,6 +111,12 @@ const pages = [
     description: 'Membership tier cards — Classic, Plus, and Premium — from Figma designs',
     tag: 'UI',
   },
+  {
+    href: '/hotel-card',
+    title: 'Hotel Card',
+    description: 'Hotel card with image, rating, amenities, and booking CTA from Figma designs',
+    tag: 'UI',
+  },
 ];
 
 export default function Home() {
