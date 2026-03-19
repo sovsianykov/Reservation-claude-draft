@@ -1,4 +1,4 @@
-import { FC, useId } from 'react';
+import { FC, SVGProps, useId } from 'react';
 import ArrowRight from '../../../public/icons/arrow-right.svg';
 import Search from '../../../public/icons/search.svg';
 import Tag from '../../../public/icons/tag.svg';
@@ -11,6 +11,8 @@ import CheckFill from '../../../public/icons/check-fill.svg';
 import GiftOpen from '../../../public/icons/gift-open.svg';
 import Plus from '../../../public/icons/plus.svg';
 import Minus from '../../../public/icons/minus.svg';
+import DollarBag from '../../../public/icons/dollar-bag.svg';
+import SecureLock from '../../../public/icons/secure-lock.svg';
 import Verified from '../../../public/icons/verified.svg';
 import Hotel from '../../../public/icons/hotel.svg';
 import Ticket from '../../../public/icons/ticket.svg';
@@ -46,6 +48,8 @@ export const iconMap = {
   giftOpen: GiftOpen,
   plus: Plus,
   minus: Minus,
+  dollarBag: DollarBag,
+  secureLock: SecureLock,
   verified: Verified,
   hotel: Hotel,
   ticket: Ticket,
@@ -68,6 +72,8 @@ export const iconMap = {
   star: Star,
   world: World,
 };
+
+export type SvgIconComponent = FC<SVGProps<SVGSVGElement> & { title?: string }>;
 
 export type IconType = keyof typeof iconMap;
 
@@ -94,7 +100,7 @@ export const Icon: FC<IconProps> = ({
   alt: _alt,
   ...other
 }) => {
-  const IconComponent = iconMap[type];
+  const IconComponent = iconMap[type] as SvgIconComponent;
   const uniqueId = useId();
   const description = ariaLabel || type;
   if (!IconComponent) {
