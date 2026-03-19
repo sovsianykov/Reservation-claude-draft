@@ -15,7 +15,7 @@ const DEFAULT_ITEMS: MenuItemConfig[] = [
   { id: 'hotels', label: 'Hotels', icon: 'hotel' },
   { id: 'tickets', label: 'Tickets', icon: 'tickets' },
   { id: 'member-perks', label: 'Member Perks', icon: 'member' },
-  { id: 'everyday-savings', label: 'Everyday Savings', icon: 'savings' },
+  { id: 'everyday-savings', label: 'Everyday Savings', icon: 'wallet' },
   { id: 'fly', label: 'Flights', icon: 'fly' },
   { id: 'rental-cars', label: 'Rental Cars', icon: 'car' },
 ];
