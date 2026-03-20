@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import HotelFilterSidebar from './HotelFilterSidebar';
 
 const meta: Meta<typeof HotelFilterSidebar> = {
@@ -29,7 +29,6 @@ export const WithCallbacks: Story = {
   args: {
     onClear: () => console.log('cleared'),
     onHotelNameChange: (name) => console.log('hotel name:', name),
-    onPriceChange: (min, max) => console.log('price range:', min, max),
     onRatingChange: (ratings) => console.log('ratings:', ratings),
     onGuestReviewChange: (min, max) => console.log('review range:', min, max),
     onPropertyTypeChange: (type) => console.log('property type:', type),
