@@ -117,6 +117,18 @@ const pages = [
     description: 'Hotel card with image, rating, amenities, and booking CTA from Figma designs',
     tag: 'UI',
   },
+  {
+    href: '/hotel-map-view',
+    title: 'Hotel Map View',
+    description: 'Map banner with background image and CTA button to switch to map view from Figma designs',
+    tag: 'UI',
+  },
+  {
+    href: '/hotel-filter-sidebar',
+    title: 'Hotel Filter Sidebar',
+    description: 'Filter panel with hotel name, price range, star ratings, guest reviews, property type, and amenities from Figma designs',
+    tag: 'UI',
+  },
 ];
 
 export default function Home() {

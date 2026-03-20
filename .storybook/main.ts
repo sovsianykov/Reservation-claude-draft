@@ -13,13 +13,20 @@ const config: StorybookConfig = {
     "@storybook/addon-docs",
     "@storybook/addon-onboarding"
   ],
-  "framework": "@storybook/nextjs-vite",
+  "framework": {
+    name: "@storybook/nextjs-vite",
+    options: {
+      image: {
+        excludeFiles: ['**/*.svg'],
+      },
+    },
+  },
   "staticDirs": [
     "../public"
   ],
   viteFinal: async (config) => {
     config.plugins = config.plugins || [];
-    config.plugins.push(svgr());
+    config.plugins.push(svgr({ include: '**/*.svg' }));
     return config;
   },
 };

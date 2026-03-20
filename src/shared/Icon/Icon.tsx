@@ -33,6 +33,7 @@ import CheckCircle from '../../../public/icons/check-circle.svg';
 import PlusMembership from '../../../public/icons/plus-membership.svg';
 import PremiumMembership from '../../../public/icons/premium-membership.svg';
 import Star from '../../../public/icons/star.svg';
+import HotelFilterStar from '../../../public/icons/hotel-filter-star.svg';
 import World from '../../../public/icons/world.svg';
 
 export const iconMap = {
@@ -70,6 +71,7 @@ export const iconMap = {
   plusMembership: PlusMembership,
   premiumMembership: PremiumMembership,
   star: Star,
+  hotelFilterStar: HotelFilterStar,
   world: World,
 };
 

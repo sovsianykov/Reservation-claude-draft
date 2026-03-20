@@ -1,0 +1,45 @@
+$map-bg: 'https://www.figma.com/api/mcp/asset/f1bc137d-2868-4667-af2f-6ec8c1106dac';
+
+.hotel-map-view {
+  position: relative;
+  width: 100%;
+  height: 108px;
+  border-radius: 20px;
+  border: 1px solid #e8e8e8;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(#{$map-bg});
+  background-size: cover;
+  background-position: center;
+  background-color: #e2e8f0;
+
+  &__btn {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    height: 40px;
+    gap: 5px;
+    background: #ffffff;
+    border: 1px solid #4501e8;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #4501e8;
+    white-space: nowrap;
+    transition: background-color 0.15s ease;
+
+    &:hover {
+      background-color: #f5f0ff;
+    }
+  }
+
+  @media (max-width: 425px) {
+    height: 90px;
+  }
+}
