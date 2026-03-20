@@ -15,7 +15,6 @@ export default function HotelFilterSidebarPage() {
           <HotelFilterSidebar
             onClear={() => console.log('Cleared')}
             onHotelNameChange={(name) => console.log('Hotel name:', name)}
-            onPriceChange={(min, max) => console.log('Price:', min, max)}
             onRatingChange={(ratings) => console.log('Ratings:', ratings)}
             onGuestReviewChange={(min, max) => console.log('Guest review:', min, max)}
             onPropertyTypeChange={(type) => console.log('Property type:', type)}
