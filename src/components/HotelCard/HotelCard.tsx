@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { FC } from 'react';
-import { SmallBadge } from '@/shared/SmallBadge/SmallBadge';
+import { SmallBadge } from '@/components/SmallBadge/SmallBadge';
 import { Icon } from '@/shared/Icon/Icon';
 import styles from './HotelCard.module.scss';
 

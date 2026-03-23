@@ -1,4 +1,4 @@
-import { Badge } from '@/shared/Badge/Badge';
+import { Badge } from '@/components/Badge/Badge';
 import Icon from '@/shared/Icon/Icon';
 import styles from './page.module.scss';
 

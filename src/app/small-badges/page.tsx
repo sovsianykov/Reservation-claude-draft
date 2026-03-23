@@ -1,4 +1,4 @@
-import SmallBadge, { SmallBadgeVariant } from '@/shared/SmallBadge/SmallBadge';
+import SmallBadge, { SmallBadgeVariant } from '@/components/SmallBadge/SmallBadge';
 import styles from './page.module.scss';
 
 const variants: { variant: SmallBadgeVariant; label: string }[] = [

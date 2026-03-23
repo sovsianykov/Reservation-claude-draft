@@ -24,7 +24,7 @@
     }
 
     &--info {
-        background-color: #ede9ff;
+        background-color: #f0e2ff;
         border-color: #7d00fc;
         color: #7d00fc;
     }
@@ -37,5 +37,10 @@
 
     &__label {
         white-space: nowrap;
+    }
+
+    @media (max-width: 425px) {
+        font-size: var(--text-mobile-h6, 14px);
+        padding: var(--padding-mobile-y, 10px) var(--padding-mobile-x, 20px);
     }
 }

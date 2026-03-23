@@ -1,5 +1,5 @@
 'use client';
-import HotelFilterSidebar from '@/components/HotelFilterSidebar/HotelFilterSidebar';
+import HotelFilterSidebar from '@/containers/HotelFilterSidebar/HotelFilterSidebar';
 import styles from './page.module.scss';
 
 export default function HotelFilterSidebarPage() {
