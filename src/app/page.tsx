@@ -129,6 +129,12 @@ const pages = [
     description: 'Filter panel with hotel name, price range, star ratings, guest reviews, property type, and amenities from Figma designs',
     tag: 'UI',
   },
+  {
+    href: '/step-container',
+    title: 'Step Container',
+    description: 'Informational step card with icon, title, and description from Figma designs',
+    tag: 'UI',
+  },
 ];
 
 export default function Home() {

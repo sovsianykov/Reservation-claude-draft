@@ -35,6 +35,7 @@ import PremiumMembership from '../../../public/icons/premium-membership.svg';
 import Star from '../../../public/icons/star.svg';
 import HotelFilterStar from '../../../public/icons/hotel-filter-star.svg';
 import World from '../../../public/icons/world.svg';
+import CrownXl from '../../../public/icons/crown-xl.svg';
 
 export const iconMap = {
   arrowRight: ArrowRight,
@@ -73,6 +74,7 @@ export const iconMap = {
   star: Star,
   hotelFilterStar: HotelFilterStar,
   world: World,
+  crownXl: CrownXl,
 };
 
 export type SvgIconComponent = FC<SVGProps<SVGSVGElement> & { title?: string }>;
